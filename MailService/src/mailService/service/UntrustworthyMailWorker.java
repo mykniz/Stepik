@@ -1,6 +1,6 @@
-package mykniz.stepik.mailService.service;
+package mailService.service;
 
-import mykniz.stepik.mailService.mail.Sendable;
+import mailService.mail.Sendable;
 
 public class UntrustworthyMailWorker implements MailService {
     private final MailService[] MAIL_SERVICES;

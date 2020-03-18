@@ -1,8 +1,8 @@
-package mykniz.stepik.mailService.service;
+package mailService.service;
 
-import mykniz.stepik.mailService.mail.MailPackage;
-import mykniz.stepik.mailService.mail.Package;
-import mykniz.stepik.mailService.mail.Sendable;
+import mailService.mail.MailPackage;
+import mailService.mail.Package;
+import mailService.mail.Sendable;
 
 public class Thief implements MailService {
     private final int MIN_PRICE;

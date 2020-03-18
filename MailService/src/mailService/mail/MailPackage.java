@@ -1,4 +1,4 @@
-package mykniz.stepik.mailService.mail;
+package mailService.mail;
 
 public class MailPackage extends AbstractSendable {
     private final Package content;

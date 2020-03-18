@@ -1,10 +1,10 @@
-package mykniz.stepik.mailService;
+package mailService;
 
-import mykniz.stepik.mailService.mail.MailMessage;
-import mykniz.stepik.mailService.mail.MailPackage;
-import mykniz.stepik.mailService.mail.Package;
-import mykniz.stepik.mailService.mail.Sendable;
-import mykniz.stepik.mailService.service.*;
+import mailService.mail.MailMessage;
+import mailService.mail.MailPackage;
+import mailService.mail.Package;
+import mailService.mail.Sendable;
+import mailService.service.*;
 
 import java.util.logging.Logger;
 
@@ -25,7 +25,7 @@ public class Main {
         MailService[] mailServices = new MailService[]{
                 new Spy(LOGGER),
                 new Thief(10),
-                new Inspector(),
+                //new Inspector(),
         };
 
         UntrustworthyMailWorker untrustworthyMailWorker = new UntrustworthyMailWorker(mailServices);

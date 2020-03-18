@@ -1,4 +1,4 @@
-package mykniz.stepik.mailService.mail;
+package mailService.mail;
 
 public class AbstractSendable implements Sendable {
 

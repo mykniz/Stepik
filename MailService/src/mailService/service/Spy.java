@@ -1,7 +1,7 @@
-package mykniz.stepik.mailService.service;
+package mailService.service;
 
-import mykniz.stepik.mailService.mail.MailMessage;
-import mykniz.stepik.mailService.mail.Sendable;
+import mailService.mail.MailMessage;
+import mailService.mail.Sendable;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
