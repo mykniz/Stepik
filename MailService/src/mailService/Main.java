@@ -1,9 +1,7 @@
 package mailService;
 
-import mailService.mail.MailMessage;
-import mailService.mail.MailPackage;
+import mailService.mail.*;
 import mailService.mail.Package;
-import mailService.mail.Sendable;
 import mailService.service.*;
 
 import java.util.logging.Logger;
@@ -12,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
 
         Sendable[] mailTraffic = new Sendable[] {
-                new MailMessage("Navalny", "Putin", "Make the Russia free again"),
+                new LogIt(new TimeIt(new MailMessage("Navalny", "Putin", "Make the Russia free again"))),
                 new MailMessage("Sobchak", "Dud", "Wanna talk"),
                 new MailMessage("Austin Powers", "James Bond", "Wasted"),
                 new MailPackage("Trump", "Merkel", new Package("money",1000)),
@@ -31,6 +29,7 @@ public class Main {
         UntrustworthyMailWorker untrustworthyMailWorker = new UntrustworthyMailWorker(mailServices);
 
         for (Sendable mail : mailTraffic) {
+            System.out.println(mail.getFrom());
             untrustworthyMailWorker.processMail(mail);
             Thief thief = (Thief) mailServices[1];
             System.out.println("Total stolen value is: " + thief.getStolenValue());
