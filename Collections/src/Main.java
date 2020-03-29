@@ -25,8 +25,7 @@ public class Main {
 
         set1Copy.addAll(set2Copy);
 
-        return set1Copy;
-    }
+        return set1Copy;    }
 
 
 }
